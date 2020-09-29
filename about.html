@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Maya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="menu-open">
+        <div class="header__top">
+            <img src="./Assets/logo.svg" alt="" class="header__logo">
+            <div class="header__menu">
+                <img src="./Assets/menu_close.svg" alt="" class="header__menu-icon close">
+            </div>
+        </div>
+
+        <div class="menu-open__items">
+            <a href="">HOME</a>
+            <a href="">ABOUT MAYA</a>
+            <a href="">PRICES</a>
+            <a href="">CONTACT</a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header__top">
+            <img src="./Assets/logo.svg" alt="" class="header__logo">
+            <div class="header__menu">
+                <p class="header__menu-text">MENU</p>
+                <img src="./Assets/menu.svg" alt="" class="header__menu-icon open">
+            </div>
+        </div>
+
+        <div class="header__title">
+            <h1>ABOUT MAYA</h1>
+            <h2>LONDON - SINCE 2000</h2>
+        </div>
+
+    </div>
+    <section class="paragraph-about container">
+        <div class="paragraph-about__text">
+            <h1 class="paragraph-about__title">Your hair experts</h1>
+            <p class="paragraph-about__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Urna nec tincidunt praesent semper feugiat.
+                Vitae turpis massa sed elementum tempus. Urna duis convallis convallis tellus id interdum velit
+                laoreet. Justo nec ultrices dui sapien eget. Urna neque viverra justo nec ultrices.
+
+            </p>
+
+            <p class="paragraph-about__copy">
+
+                Purus semper eget duis at tellus at urna condimentum. Justo laoreet sit amet cursus sit amet dictum
+                sit. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Ultrices gravida dictum
+                fusce ut placerat orci nulla. Scelerisque eleifend donec pretium vulputate. Mauris augue neque
+                gravida in. Sed blandit libero volutpat sed cras ornare arcu dui. Ullamcorper sit amet risus nullam
+                eget felis eget nunc lobortis.</p>
+        </div>
+
+        <div class="paragraph-about__picture">
+            <img src="./Assets/wedding.jpg" alt="" class="paragraph-about__img">
+            <!-- <img src="./Assets/abut-wave.svg" alt="" class="paragraph-about__wave"> -->
+        </div>
+
+    </section>
+
+    <div class="slider-wrapper">
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+                <div class="slide"><img src="./Assets/slide.jpg" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="brands-wrapper">
+        <div class="container">
+            <img src="./Assets/LOreal-Logo.png" alt="" class="brand">
+            <img src="./Assets/Kerastase-Logo.png" alt="" class="brand">
+            <img src="./Assets/matrix-logo.png" alt="" class="brand">
+        </div>
+    </section>
+
+    <div class="footer-about">
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+
+    <script>
+        // import {tns} from './src/tiny-slider.js';
+
+        const slider = tns({
+            container: '.slider',
+            // items: 4,
+            // slideBy: 1,
+            // autoplay: false,
+            // // loop: true,
+            // rewind: true,
+            // autoplay: true,
+
+            items: 2,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            controls: true,
+            nav: false,
+            autoplayButton: false,
+            autoplayButtonOutput: false,
+            touch: true,
+            mouseDrag: true,
+
+        });
+    </script>
+</body>
+
+<script src="./js/menu.js"></script>
+
+</html>

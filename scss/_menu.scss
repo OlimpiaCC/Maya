@@ -1,0 +1,75 @@
+.menu-open {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../Assets/menu_bgc.jpg) no-repeat;
+    background-size: 100%;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: 0.6s;
+    overflow: hidden;
+
+    @include breakpoint(bigMobile) {
+        background-size: cover;
+
+    }
+
+
+
+
+    &__active {
+        transform: translateY(0%);
+
+
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        padding: 28vh;
+
+        @include breakpoint(bigMobile) {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-family: Brandon-regular;
+            border: 1px solid transparent;
+            color: $font_color;
+
+
+            &:hover {
+                border: 1px solid $font_color;
+            }
+
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 0 0;
+        z-index: 101;
+
+
+
+
+
+    }
+
+}

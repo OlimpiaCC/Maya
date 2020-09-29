@@ -1,0 +1,437 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+    &__logo {
+        padding-left: 20px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 0 0;
+
+        &__title {
+            padding-right: 20px;
+            font-family: Brandon-regular;
+        }
+
+
+
+
+    }
+}
+
+.section-one {
+    display: flex;
+    flex-direction: row;
+
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            align-items: center;
+            height: 80vh;
+
+        }
+
+        h1 {
+            font-size: 80px;
+            color: #4C4C4C;
+            padding-left: 20%;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint(bigDesktop) {
+                font-size: 70px;
+
+            }
+
+            @include breakpoint(mobileonly) {
+                font-size: 50px;
+                padding-left: 10%;
+
+
+            }
+
+
+
+            &::before {
+                content: 'MAYA';
+                color: #EDE3E7;
+                left: 10%;
+                top: -40px;
+                z-index: -1;
+                position: absolute;
+
+
+                @include breakpoint(mobileonly) {
+                    left: 0;
+                    top: -30px;
+
+
+                  
+    
+    
+                }
+
+
+
+            }
+
+
+
+        }
+
+        h2 {
+            font-size: 16px;
+            color: #656565;
+            padding-left: 20%;
+            letter-spacing: 1px;
+
+
+
+
+            &::after {
+                content: "";
+                height: 270px;
+                width: 300px;
+                position: absolute;
+                background-image: url('../Assets/wave.svg');
+                top: 30%;
+                left: 0;
+
+            }
+        }
+    }
+
+    &__bgc {
+        width: 50%;
+        background: url(../Assets/s1.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            align-items: center;
+            height: 80vh;
+
+
+        }
+    }
+}
+
+.section-two {
+    display: flex;
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column-reverse;
+    }
+
+    &__bgc {
+        width: 50%;
+        background: url(../Assets/s2.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            height: 80vh;
+
+            align-items: center;
+
+        }
+    }
+
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            height: 80vh;
+
+        }
+
+
+
+        p {
+            max-width: 450px;
+            padding-left: 20%;
+            padding-bottom: 40px;
+            z-index: 1;
+
+            @include breakpoint(mobileonly) {
+                padding-left: 10%;
+            }
+
+
+
+        }
+
+
+        h1 {
+            padding-left: 20%;
+            padding-bottom: 40px;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: 'HE';
+                color: $light-color;
+                font-size: 200px;
+                left: 60px;
+                top: -60px;
+                z-index: -1;
+                position: absolute;
+            }
+
+            @include breakpoint(mobileonly) {
+                padding-left: 10%;
+            }
+        }
+    }
+
+    &__button {
+        margin-left: 20%;
+
+        @include breakpoint(mobileonly) {
+            margin-left: 10%;
+        }
+
+
+    }
+
+}
+
+.section-three {
+    display: flex;
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column;
+    }
+
+    &__bgc {
+        width: 50%;
+        background: url(../Assets/s3.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            align-items: center;
+            height: 80vh;
+
+
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            height: 80vh;
+
+        }
+
+
+        p {
+            max-width: 450px;
+            z-index: 1;
+
+
+
+        }
+
+
+        h1 {
+            padding-left: 20%;
+            padding-bottom: 40px;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint(mobileonly) {
+                padding-left: 10%;
+            }
+
+            &::before {
+                content: 'WH';
+                color: $light-color;
+                font-size: 200px;
+                left: 60px;
+                top: -60px;
+                z-index: -1;
+                position: absolute;
+
+                @include breakpoint(mobileonly) {
+                    left: 20px;
+                }
+
+
+            }
+        }
+    }
+
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        width: 60%;
+
+        @include breakpoint(mobileonly) {
+            padding-left: 10%;
+        }
+
+    }
+
+
+    &__single-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: $button_color solid 1px;
+        width: 100%;
+        padding: 10px 0;
+
+    }
+
+    &__button {
+        margin-left: 20%;
+        margin-top: 60px;
+
+        @include breakpoint(mobileonly) {
+            margin-left: 10%;
+        }
+
+
+    }
+
+}
+
+
+.section-four {
+    display: flex;
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column-reverse;
+    }
+
+    &__bgc {
+        width: 50%;
+        background: url(../Assets/s4.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+            align-items: center;
+            height: 80vh;
+
+
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+        }
+
+
+        p {
+            max-width: 450px;
+            z-index: 1;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: Brandon-regular;
+        }
+
+
+        h1 {
+            padding-left: 20%;
+            padding-bottom: 40px;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '£';
+                color: $light-color;
+                font-size: 200px;
+                left: 60px;
+                top: -60px;
+                z-index: -1;
+                position: absolute;
+            }
+        }
+    }
+
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        padding-bottom: 40px;
+        width: 60%;
+
+    }
+
+
+    &__single-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: $button_color solid 1px;
+        width: 100%;
+        padding: 10px 0;
+
+    }
+
+    &__button {
+        margin-left: 20%;
+        margin-top: 10px;
+
+
+    }
+
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+}

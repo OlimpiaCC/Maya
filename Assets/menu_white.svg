@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MAYA_Prices" transform="translate(-1811.000000, -42.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group-3">
+                <g id="Group-Copy" transform="translate(1811.000000, 42.000000)">
+                    <rect id="Rectangle" x="1" y="1" width="56" height="56"></rect>
+                    <path d="M15,28.5 L44,28.5" id="Line" stroke-linecap="square"></path>
+                    <path d="M15,16 L44,16" id="Line-Copy" stroke-linecap="square"></path>
+                    <path d="M15,41 L44,41" id="Line-Copy-2" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

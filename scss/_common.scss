@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Giaza;
+    src: url(../Assets/Giaza/GiazaStencil.ttf);
+}
+
+@font-face {
+    font-family: Brandon-light;
+    src: url(../Assets/Brandon/Brandon_light.otf);
+}
+
+@font-face {
+    font-family: Brandon-medium;
+    src: url(../Assets/Brandon/Brandon_med.otf);
+}
+
+@font-face {
+    font-family: Brandon-regular;
+    src: url(../Assets/Brandon/Brandon_reg.otf);
+}
+
+@font-face {
+    font-family: Brandon-thin;
+    src: url(../Assets/Brandon/Brandon_thin.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Brandon-thin';
+    font-weight: 100;
+    color: #222222;
+    outline: none;
+
+}
+
+h1 {
+
+    font-family: Giaza;
+    font-size: 50px;
+    color: $font_color;
+
+
+    @include breakpoint(newMobile) {
+        font-size: 38px;
+
+    }
+
+
+}
+
+p {
+    line-height: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+.white-txt {
+    color: white
+}
+
+.dark-txt {
+    color: $font_color;
+}
+
+.button {
+    background-color: $button_color;
+    text-decoration: none;
+    font-family: Brandon-medium;
+    font-size: 12px;
+    color: white;
+    padding: 20px 50px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;;
+}
+

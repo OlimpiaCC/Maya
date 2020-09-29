@@ -1,0 +1,241 @@
+.contact-bgc {
+
+    background-image: url(../Assets/contact.jpg);
+
+
+    @include breakpoint(bigMobile) {
+        background-image: url(../Assets/contact_mobile.jpg);
+
+
+    }
+
+}
+
+
+.contact-wrapper {
+    position: relative;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(mobileonly) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+        .contact-box {
+            width: 40%;
+            background-color: transparent;
+            padding-bottom: 100px;
+
+            @include breakpoint(bigMobile) {
+                width: 50%;
+                padding: 0 5%;
+
+            }
+
+            @include breakpoint(newMobile) {
+                width: 80%;
+
+
+
+            }
+
+
+
+            &__title {
+                padding: 100px 0 40px 0;
+
+
+                @include breakpoint(bigMobile) {
+                    padding: 50px 0 20px 0;
+                    font-size: 38px;
+
+
+                }
+            }
+
+
+            &__details {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__single-info {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: $button_color solid 1px;
+                padding: 20px 0;
+
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+}
+
+.pink {
+    background-color: $light-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 600px;
+    width: 50%;
+    z-index: -1;
+
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
+
+
+
+}
+
+.request-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Assets/book.jpg);
+    margin-top: 40px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+
+
+    .request {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 80%;
+
+
+        &__button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        button {
+            background-color: $button-color;
+
+            border: 1px solid white;
+            color: white;
+            padding: 15px 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: right;
+            margin-top: 50px;
+
+            &:hover {
+                color: $font_color;
+                background-color: transparent;
+                border: 1px solid $button-color;
+            }
+        }
+
+
+        h1 {
+
+            padding: 100px 0;
+
+
+            @include breakpoint(newMobile) {
+                padding: 50px 0;
+
+            }
+        }
+
+        h2 {
+            margin-bottom: -20px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .request-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            &__personal {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                width: calc(100% - 8px);
+
+                @include breakpoint(newMobile) {
+                    flex-direction: column;
+                }
+
+
+            }
+
+            &__name {
+                width: 46%;
+
+                @include breakpoint(newMobile) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    width: 97%;
+                    padding: 15px;
+                }
+            }
+
+            &__email {
+                width: 46%;
+
+                @include breakpoint(newMobile) {
+                    width: 100%;
+                }
+
+                input {
+                    width: 97%;
+                    padding: 15px;
+                }
+            }
+
+            &__message {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    padding: 15px 0 100px 15px;
+                }
+            }
+
+            input {
+                background-color: white;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                    border: 1px solid $button-color;
+                    background-color: $light-color;
+
+                }
+
+
+            }
+        }
+    }
+}

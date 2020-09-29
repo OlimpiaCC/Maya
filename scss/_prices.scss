@@ -1,0 +1,233 @@
+.prices-bgc {
+
+    background-image: url(../Assets/bcg_prices.jpg);
+
+    @include breakpoint(bigMobile) {
+        background-image: url(../Assets/prices_mobile.jpg);
+
+
+    }
+
+}
+
+.white-txt {
+    color: white
+}
+
+.women {
+    padding-top: 100px;
+
+    h1 {
+        position: relative;
+        padding: 40px 0;
+
+        @include breakpoint(bigMobile) {
+            padding-left: 5%;
+
+        }
+
+
+
+        &:after {
+            content: "WH";
+            position: absolute;
+            left: -8%;
+            top: -8%;
+            font-size: 250px;
+            color: $light_color;
+            z-index: -10;
+
+        }
+    }
+
+    p {
+        font-size: 20px;
+
+        @include breakpoint(bigMobile) {
+            padding: 0 5%;
+
+        }
+    }
+
+
+
+    .book-button {
+        background-color: $button_color;
+        text-decoration: none;
+        font-family: Brandon-medium;
+        color: white;
+        padding: 20px 50px;
+
+
+        @include breakpoint(bigMobile) {
+
+            margin-left: 35%;
+        }
+
+        @include breakpoint(mobileonly) {
+            margin-left: 30%;
+
+    
+        }
+    }
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 100px;
+
+    @include breakpoint(mobileonly) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+
+    }
+    
+
+
+    &__box {
+        width: 40%;
+        font-size: 20px;
+
+        @include breakpoint(bigMobile) {
+            width: 45%;
+
+        }
+
+        @include breakpoint(mobileonly) {
+            width: 100%;
+            padding-bottom: 30px;
+
+    
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: Brandon-regular;
+            padding-bottom: 20px;
+
+
+            @include breakpoint(bigMobile) {
+                padding-left: 5%;
+
+            }
+
+            @include breakpoint(newMobile) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__single-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: $button_color solid 1px;
+    }
+
+}
+
+.men {
+    background: url(../Assets/bcg_men.jpg) no-repeat center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    @include breakpoint(mobileonly) {
+       
+        margin-top: 65px;
+        padding-bottom: 65px;
+        background-size: cover;
+
+
+
+    }
+
+    .prices {
+
+
+        @include breakpoint(bigMobile) {
+            padding-left: 5%;
+
+        }
+
+        &__box {
+
+            h2 {
+                color: white;
+
+            }
+
+        }
+
+        &__single-price {
+            border-bottom: #676767 solid 1px;
+
+        }
+    }
+
+
+    h1 {
+        position: relative;
+        padding: 150px 0 60px 0;
+        z-index: 10;
+        color: white;
+
+
+        @include breakpoint(bigMobile) {
+            padding-left: 5%;
+
+        }
+
+        &:after {
+            content: "MH";
+            position: absolute;
+            left: -8%;
+            top: 20%;
+            font-size: 250px;
+            color: #525151;
+            opacity: 70%;
+            z-index: -1;
+
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: white;
+
+        @include breakpoint(bigMobile) {
+            padding: 0 5%;
+
+        }
+
+  
+    }
+
+    .book-button {
+
+        background-color: white;
+        text-decoration: none;
+        font-family: Brandon-medium;
+        color: #545454;
+        padding: 20px 50px;
+
+
+        @include breakpoint(bigMobile) {
+
+            margin-left: 35%;
+        }
+
+        @include breakpoint(mobileonly) {
+            margin-left: 30%;
+
+    
+        }
+
+    }
+}
