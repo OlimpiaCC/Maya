@@ -34,7 +34,7 @@
             background-color: transparent;
             padding-bottom: 100px;
 
-            @include breakpoint(bigMobile) {
+            @include breakpoint(bigTablet) {
                 width: 50%;
                 padding: 0 5%;
 
@@ -134,21 +134,17 @@
 
 
         button {
-            background-color: $button-color;
-
-            border: 1px solid white;
-            color: white;
-            padding: 15px 40px;
             cursor: pointer;
             transition: 0.3s;
             text-align: right;
             margin-top: 50px;
 
-            &:hover {
-                color: $font_color;
-                background-color: transparent;
-                border: 1px solid $button-color;
-            }
+        }
+
+        button:hover {
+            border: 2px solid $button_color;
+            background-color: transparent;
+            color: $button_color;
         }
 
 

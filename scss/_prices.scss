@@ -21,7 +21,7 @@
         position: relative;
         padding: 40px 0;
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
             padding-left: 5%;
 
         }
@@ -37,13 +37,19 @@
             color: $light_color;
             z-index: -10;
 
+            @include breakpoint(mobileonly) {
+                left: 0;
+                top: -40%;
+        
+            }
+
         }
     }
 
     p {
         font-size: 20px;
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
             padding: 0 5%;
 
         }
@@ -59,16 +65,13 @@
         padding: 20px 50px;
 
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
 
-            margin-left: 35%;
+            margin-left: 5%;
         }
 
-        @include breakpoint(mobileonly) {
-            margin-left: 30%;
+      
 
-    
-        }
     }
 }
 
@@ -93,17 +96,30 @@
         width: 40%;
         font-size: 20px;
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
             width: 45%;
+            padding-left: 5%;
+
+            padding-right: 5%;
+
 
         }
 
         @include breakpoint(mobileonly) {
-            width: 100%;
+            width: 90%;
             padding-bottom: 30px;
 
     
         }
+
+
+    p {
+
+        @include breakpoint(bigTablet) {
+            padding: 0;
+
+        }
+    }
 
         h2 {
             font-size: 20px;
@@ -111,8 +127,7 @@
             padding-bottom: 20px;
 
 
-            @include breakpoint(bigMobile) {
-                padding-left: 5%;
+            @include breakpoint(bigTablet) {
 
             }
 
@@ -152,7 +167,7 @@
     .prices {
 
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(biTablet) {
             padding-left: 5%;
 
         }
@@ -180,7 +195,7 @@
         color: white;
 
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
             padding-left: 5%;
 
         }
@@ -202,7 +217,7 @@
         font-size: 20px;
         color: white;
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
             padding: 0 5%;
 
         }
@@ -219,16 +234,11 @@
         padding: 20px 50px;
 
 
-        @include breakpoint(bigMobile) {
+        @include breakpoint(bigTablet) {
 
-            margin-left: 35%;
+            margin-left: 5%;
         }
 
-        @include breakpoint(mobileonly) {
-            margin-left: 30%;
-
-    
-        }
 
     }
 }

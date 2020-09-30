@@ -75,7 +75,7 @@
                 color: #EDE3E7;
                 left: 10%;
                 top: -40px;
-                z-index: -1;
+                z-index: -5;
                 position: absolute;
 
 
@@ -124,6 +124,7 @@
         background: url(../Assets/s1.jpg) no-repeat center;
         background-size: cover;
         height: 100vh;
+        z-index: 2;
 
         @include breakpoint(bigMobile) {
             width: 100%;
@@ -181,9 +182,12 @@
             padding-bottom: 40px;
             z-index: 1;
 
-            @include breakpoint(mobileonly) {
+            @include breakpoint(tablet) {
                 padding-left: 10%;
+                padding-right: 10%;
             }
+
+        
 
 
 
@@ -206,7 +210,7 @@
                 position: absolute;
             }
 
-            @include breakpoint(mobileonly) {
+            @include breakpoint(tablet) {
                 padding-left: 10%;
             }
         }
@@ -214,8 +218,10 @@
 
     &__button {
         margin-left: 20%;
+        border: 2px solid transparent;
 
-        @include breakpoint(mobileonly) {
+
+        @include breakpoint(tablet) {
             margin-left: 10%;
         }
 
@@ -325,6 +331,7 @@
     &__button {
         margin-left: 20%;
         margin-top: 60px;
+        border: 2px solid transparent;
 
         @include breakpoint(mobileonly) {
             margin-left: 10%;
@@ -424,6 +431,7 @@
     &__button {
         margin-left: 20%;
         margin-top: 10px;
+        border: 2px solid transparent;
 
 
     }

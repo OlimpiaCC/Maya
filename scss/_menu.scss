@@ -1,6 +1,6 @@
 .menu-open {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,8 +14,8 @@
     overflow: hidden;
 
     @include breakpoint(bigMobile) {
+        background: url(../Assets/menu_bgc_mobile.jpg) no-repeat;
         background-size: cover;
-
     }
 
 
