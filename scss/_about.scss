@@ -17,7 +17,7 @@
         padding: 40px;
         z-index: 10;
 
-        
+
     }
 
     &__menu {
@@ -42,8 +42,8 @@
         @include breakpoint(bigMobile) {
             padding-top: 15vh;
 
-    
-    
+
+
         }
 
 
@@ -98,8 +98,8 @@
         @include breakpoint(bigTablet) {
             padding-left: 5%;
             margin-right: 5%;
-         
-    
+
+
         }
     }
 
@@ -111,7 +111,7 @@
             justify-content: center;
         }
 
-  
+
 
 
         &:after {
@@ -146,7 +146,7 @@
             border: none;
         }
 
-   
+
 
 
 
@@ -175,11 +175,6 @@
 
     }
 }
-
-
-
-
-
 
 .slider-container {
     position: relative;
@@ -256,7 +251,7 @@
     @include breakpoint(bigMobile) {
         height: 300px;
 
-        
+
     }
 
     .container {
@@ -273,17 +268,17 @@
         @include breakpoint(bigMobile) {
             height: 300px;
 
-            
+
         }
 
         @include breakpoint(mobileonly) {
             flex-direction: column;
-            
+
         }
 
-   
 
-        
+
+
 
         img {
 
@@ -292,9 +287,9 @@
 
             }
 
-        
 
-   
+
+
 
         }
 
@@ -310,12 +305,17 @@
             text-decoration: none;
             padding-right: 40px;
 
-      
 
             @include breakpoint(newMobile) {
                 padding-right: 10px;
-    
+
             }
+        }
+
+
+        a:hover {
+            border: none;
+            color: $font_color;
         }
     }
 
@@ -349,5 +349,5 @@
 
         }
     }
- 
+
 }

@@ -1176,6 +1176,11 @@ a {
   }
 }
 
+.footer__nav a:hover {
+  border: none;
+  color: #222222;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
