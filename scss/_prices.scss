@@ -224,6 +224,13 @@
         padding: 20px 50px;
         border: 2px solid transparent;
 
+        &:hover {
+            border: 2px solid $button_color;
+            background-color: transparent;
+            color: $button_color;
+        
+        }
+
 
 
         @include breakpoint(bigTablet) {

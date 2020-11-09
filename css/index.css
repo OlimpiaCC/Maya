@@ -1438,6 +1438,12 @@ a {
   border: 2px solid transparent;
 }
 
+.men .book-button:hover {
+  border: 2px solid #DECDD3;
+  background-color: transparent;
+  color: #DECDD3;
+}
+
 @media (max-width: 1024px) {
   .men .book-button {
     margin-left: 5%;
