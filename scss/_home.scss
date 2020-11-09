@@ -32,6 +32,7 @@
 
     @include breakpoint(bigMobile) {
         flex-direction: column;
+        height: 1000px;
     }
 
     &__text {
@@ -71,12 +72,12 @@
 
 
             &::before {
-                content: 'MAYA';
-                color: #EDE3E7;
-                left: 10%;
-                top: -40px;
-                z-index: -5;
-                position: absolute;
+          content: 'MAYA';
+          color: #EDE3E7;
+          left: 10%;
+          top: -40px;
+          z-index: -5;
+          position: absolute;
 
 
                 @include breakpoint(mobileonly) {
@@ -84,9 +85,9 @@
                     top: -30px;
 
 
-                  
-    
-    
+
+
+
                 }
 
 
@@ -187,7 +188,7 @@
                 padding-right: 10%;
             }
 
-        
+
 
 
 
@@ -218,7 +219,6 @@
 
     &__button {
         margin-left: 20%;
-        border: 2px solid transparent;
 
 
         @include breakpoint(tablet) {

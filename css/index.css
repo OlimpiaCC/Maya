@@ -344,9 +344,11 @@ p {
   width: 100px;
   text-align: center;
   text-transform: uppercase;
+  border: 2px solid transparent;
 }
 
 button {
+  border: 2px solid transparent;
   background-color: #DECDD3;
   text-decoration: none;
   font-family: Brandon-medium;
@@ -355,7 +357,6 @@ button {
   padding: 20px 50px;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid transparent;
 }
 
 a:hover {
@@ -416,6 +417,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 1000px;
   }
 }
 
@@ -611,7 +613,6 @@ a {
 
 .section-two__button {
   margin-left: 20%;
-  border: 2px solid transparent;
 }
 
 @media (max-width: 960px) {
@@ -962,7 +963,7 @@ a {
   position: relative;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .paragraph-about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -982,7 +983,7 @@ a {
   width: 50%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .paragraph-about__text {
     width: 80%;
     -webkit-box-pack: center;
@@ -1009,7 +1010,7 @@ a {
   display: flex;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .paragraph-about__picture {
     width: 100%;
     -webkit-box-pack: center;
@@ -1027,9 +1028,10 @@ a {
   bottom: 0;
   right: -10%;
   z-index: -10;
+  overflow: hidden;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .paragraph-about__picture:after {
     display: none;
   }
@@ -1279,14 +1281,6 @@ a {
   }
 }
 
-.women .book-button {
-  background-color: #DECDD3;
-  text-decoration: none;
-  font-family: Brandon-medium;
-  color: white;
-  padding: 20px 50px;
-}
-
 @media (max-width: 1024px) {
   .women .book-button {
     margin-left: 5%;
@@ -1441,6 +1435,7 @@ a {
   font-family: Brandon-medium;
   color: #545454;
   padding: 20px 50px;
+  border: 2px solid transparent;
 }
 
 @media (max-width: 1024px) {

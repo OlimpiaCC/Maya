@@ -40,7 +40,7 @@
             @include breakpoint(mobileonly) {
                 left: 0;
                 top: -40%;
-        
+
             }
 
         }
@@ -58,19 +58,11 @@
 
 
     .book-button {
-        background-color: $button_color;
-        text-decoration: none;
-        font-family: Brandon-medium;
-        color: white;
-        padding: 20px 50px;
-
 
         @include breakpoint(bigTablet) {
 
             margin-left: 5%;
         }
-
-      
 
     }
 }
@@ -89,7 +81,7 @@
 
 
     }
-    
+
 
 
     &__box {
@@ -109,17 +101,17 @@
             width: 90%;
             padding-bottom: 30px;
 
-    
-        }
-
-
-    p {
-
-        @include breakpoint(bigTablet) {
-            padding: 0;
 
         }
-    }
+
+
+        p {
+
+            @include breakpoint(bigTablet) {
+                padding: 0;
+
+            }
+        }
 
         h2 {
             font-size: 20px;
@@ -127,9 +119,7 @@
             padding-bottom: 20px;
 
 
-            @include breakpoint(bigTablet) {
-
-            }
+            @include breakpoint(bigTablet) {}
 
             @include breakpoint(newMobile) {
                 font-size: 18px;
@@ -155,7 +145,7 @@
     padding-bottom: 100px;
 
     @include breakpoint(mobileonly) {
-       
+
         margin-top: 65px;
         padding-bottom: 65px;
         background-size: cover;
@@ -222,7 +212,7 @@
 
         }
 
-  
+
     }
 
     .book-button {
@@ -232,6 +222,8 @@
         font-family: Brandon-medium;
         color: #545454;
         padding: 20px 50px;
+        border: 2px solid transparent;
+
 
 
         @include breakpoint(bigTablet) {
